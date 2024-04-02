@@ -1,0 +1,9 @@
+.app-footer {
+  background-color: palevioletred;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.app-footer span {
+  font-size: 14px;
+}
