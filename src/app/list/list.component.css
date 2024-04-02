@@ -1,0 +1,23 @@
+.pets-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pets-list li {
+  margin-bottom: 10px;
+}
+
+.pets-list a {
+  text-decoration: none;
+  color: black;
+}
+
+.pets-list a:hover {
+  text-decoration: underline;
+}
+.pet-list-image {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 4px;
+}

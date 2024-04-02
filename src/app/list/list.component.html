@@ -1,1 +1,9 @@
-<p>list works!</p>
+<ul class="pets-list">
+  <li *ngFor="let pet of pets">
+    <a [routerLink]="['/details', pet.id]">
+      <!-- Display pet image with proper alt text -->
+      <img [src]="pet.image" [alt]="pet.name" class="pet-list-image">
+      <span>{{ pet.name }}</span> - <small>{{ pet.petKind }}</small>
+    </a>
+  </li>
+</ul>

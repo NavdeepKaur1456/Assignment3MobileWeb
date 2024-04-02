@@ -1,0 +1,21 @@
+.pet-details-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.pet-details-image {
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 4px;
+}
+
+.pet-details-text {
+  max-width: 600px;
+}
+
+.back-to-list-link {
+  margin-top: 20px;
+  text-align: center;
+}
