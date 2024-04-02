@@ -1,1 +1,17 @@
-<p>details works!</p>
+<ng-container *ngIf="pet$ | async as pet; else notFound">
+  <div class="pet-details-container">
+    <img [src]="pet.image" [alt]="pet.name" class="pet-details-image">
+    <div class="pet-details-text">
+      <h2>{{ pet.name | uppercase }} - {{ pet.petKind | uppercase }}</h2>
+      <p><strong>Age:</strong> {{ pet.age }}</p>
+    </div>
+  </div>
+</ng-container>
+<ng-template #notFound>
+  <p>Pet details not available.</p>
+</ng-template>
+
+<!-- Link to the main list page -->
+<p class="back-to-list-link">
+  <a routerLink="/">Back to Pet Catalog</a>
+</p>
